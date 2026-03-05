@@ -1,4 +1,5 @@
 import logo from "../assets/logo/logo-white.png";
+import adilogo from "../assets/webicon/adilogo.png";
 const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white py-10 px-5">
@@ -40,6 +41,18 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <div className="text-center text-sm">
+          <p className="flex items-center justify-center">
+            &copy; <span className="font-bold mr-1">RedStore</span> | Design &
+            Developed By Aditya Mishra
+            <img
+              className="h-5 w-5 ml-2 filter dark:invert"
+              src={adilogo}
+              alt="Aditya's Logo"
+            />
+          </p>
+        </div>
     </footer>
   );
 };
