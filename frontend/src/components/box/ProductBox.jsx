@@ -44,9 +44,7 @@ const ProductBox = () => {
               alt="shirts images"
               className="w-full h-64 object-cover rounded-md mb-4"
             />
-            <h3 className="text-lg font-semibold mb-2">
-              {shirt.name}
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">{shirt.name}</h3>
             <p className="text-lg font-bold text-red-500 mb-2">
               Price: ${shirt.price}
             </p>

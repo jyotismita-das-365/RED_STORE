@@ -14,45 +14,35 @@ const Footer = () => {
           <h3 className="font-semibold mb-3">Useful Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/">
-                Home
-              </a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">
-                About Us
-              </a>
+              <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="/products">
-                Products
-              </a>
+              <a href="/products">Products</a>
             </li>
             <li>
-              <a href="/contact">
-                Contact
-              </a>
+              <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="/privacy">
-                Privacy Policy
-              </a>
+              <a href="/privacy">Privacy Policy</a>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="text-center text-sm">
-          <p className="flex items-center justify-center">
-            &copy; <span className="font-bold mr-1">RedStore</span> | Design &
-            Developed By Aditya Mishra
-            <img
-              className="h-5 w-5 ml-2 filter dark:invert"
-              src={adilogo}
-              alt="Aditya's Logo"
-            />
-          </p>
-        </div>
+        <p className="flex items-center justify-center">
+          &copy; <span className="font-bold mr-1">RedStore</span> | Design &
+          Developed By Aditya Mishra
+          <img
+            className="h-5 w-5 ml-2 filter dark:invert"
+            src={adilogo}
+            alt="Aditya's Logo"
+          />
+        </p>
+      </div>
     </footer>
   );
 };

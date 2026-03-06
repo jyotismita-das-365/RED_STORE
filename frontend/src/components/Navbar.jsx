@@ -130,8 +130,6 @@ const Navbar = () => {
                 <Categories />
                 <Product />
                 <About />
-                <Contact />
-                <Account />
                 <Footer />
               </>
             }

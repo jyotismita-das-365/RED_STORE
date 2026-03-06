@@ -1,9 +1,8 @@
-
 const CategoryBox = () => {
   return (
     <>
-    <img src="" alt="" />
-    <h1></h1>
+      <img src="" alt="" />
+      <h1></h1>
     </>
   );
 };
