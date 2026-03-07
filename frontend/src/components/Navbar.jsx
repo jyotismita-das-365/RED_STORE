@@ -2,13 +2,14 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Sun, ShoppingCart, Menu, X } from "lucide-react";
 import logo from "../assets/logo/logo.png";
-import About from "./About.jsx";
+import Cart from "./CartItem";
+import About from "./About";
 import Account from "./Account";
-import Contact from "./Contact.jsx";
-import Product from "./Product.jsx";
-import Footer from "./Footer.jsx";
-import Banner from "./Banner.jsx";
-import Categories from "./categories/Categories.jsx";
+import Contact from "./Contact";
+import Product from "./Product";
+import Footer from "./Footer";
+import Banner from "./Banner";
+import Categories from "./categories/Categories";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,10 +62,11 @@ const Navbar = () => {
 
           {/* Icons */}
           <div className="flex items-center gap-6 text-gray-800">
-            <ShoppingCart
-              className="cursor-pointer hover:scale-110 transition"
-              size={24}
-            />
+            <Link to="/ShoppingCart">
+            <ShoppingCart className="cursor-pointer hover:scale-110 transition"
+              size={24}/>
+            </Link>
+            
             <Sun
               className="cursor-pointer hover:scale-110 transition"
               size={24}
@@ -169,6 +171,10 @@ const Navbar = () => {
                 <Footer />
               </>
             }
+          />
+          <Route 
+          path="/ShoppingCart"
+          element={<Cart />}
           />
         </Routes>
       </BrowserRouter>
